@@ -1,19 +1,49 @@
-# NLU_assignments_AUT
-<p>  <b> Natural language understanding course assignments
-<p> exercise 1:
-<p>  topic: Persian poem meter classification using XLM-Roberta model fine-tuning 
+# 🚀 NLU Assignments - AUT
 
-<p>   <b>exercise 2:
-<p>  topic: intent detection and slot filling using different LLM models on the Amazon Massive dataset (for perisan and English language)
-<p>  +encoder-only model: I have used the XLM-Roberta and Bert model here 
-<p>  +decoder-only model: I have used Llama 3.2-1B and GPT3 models here 
-<p>  +encoder-decoder model: I have used the MT5 model here 
+## 📖 Natural Language Understanding Course Assignments  
 
-<p>   <b>exercise 3:
-<p>  topic: designing a QA system using RAG architecture for answering Persian religious complex questions 
+### 📌 Exercise 1: Persian Poem Meter Classification  
+🔹 **Models Used:** XLM-RoBERTa, mT5, Bi-LSTM with Attention  
+🔹 Tackled this problem as both a **sequence-to-sequence** task and a **token classification** task.  
+🔹 Achieved **excellent accuracy** on the test dataset in both approaches.  
 
+---
 
+### 📌 Exercise 2: Intent Detection & Slot Filling  
+**Dataset:** Amazon MASSIVE (Persian & English)  
 
-<p>   <b>final project: 
-<p>  topic : Task 11: Bridging the Gap in Text-Based Emotion Detection
+#### 🏗️ Models Used:  
+- **Encoder-only:** XLM-RoBERTa, BERT  
+- **Decoder-only:** LLaMA 3.2-1B, GPT-3  
+- **Encoder-decoder:** mT5  
 
+⚠️ *Note:* Due to **infrastructure limitations** (**RTX 4060 Ti**), one training run didn’t complete fully, but I still demonstrated model performance and convergence.  
+
+---
+
+### 📌 Exercise 3: QA System with RAG  
+🔹 **Task:** Designed a **Retrieval-Augmented Generation (RAG)** system for answering **complex Persian religious questions**.  
+
+#### ⚡ Key Features:  
+- **Clustering for Efficient Retrieval:** HDBSCAN, Agglomerative Clustering, K-Means 
+- **Indexing:** FAISS vector database
+- **Embeddings Model:** bert-base-fa-qa (fine-tuned for QA tasks)  
+✅ Achieved **strong results** in both **k-related retrieval** and **LLM-based answer generation**.  
+
+---
+
+### 📌 Final Project: Multi-Turn Chatbot for Banking 🏦💬  
+🔹 **LLM Used:** LLaMA 3.2-8B (quantized) + intent detection & slot-filling models  
+🔹 **Purpose:** Built a **financial banking chatbot** that interacts with users and collects information in **JSON format** for API integration.  
+
+---
+
+### 🛠️ Technologies & Tools  
+- **Libraries & Frameworks:** PyTorch, Tensorflow, Transformers, FAISS
+- **Models:** XLM-RoBERTa, mT5, Bi-LSTM, LLaMA 3.2, GPT-3 ,Bert
+- **Clustering Methods:** HDBSCAN, K-Means, Agglomerative  
+
+---
+
+### 📩 Contact & Contributions  
+💡 If you're interested in contributing or discussing improvements, feel free to open an issue or reach out!  
